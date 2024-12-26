@@ -35,6 +35,15 @@ header {
     grid-row: 1 / 2;
 
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(2, 1fr)
+}
+
+header > div {
+    display: grid;
+    grid-auto-flow: column;
 }
 
 main {

@@ -1,6 +1,4 @@
 body {
-    height: 100vh;
-
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 3fr;
@@ -11,7 +9,6 @@ body {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
 
-    height: 100%;
     padding: 15px;
 
     display: grid;
@@ -93,4 +90,17 @@ main {
 .trending-card {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+}
+
+.trending-content {
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+
+    display: grid;
+    gap: 15px;
+}
+
+.trending-content > div {
+    display: grid;
+    grid-auto-flow: column;
 }

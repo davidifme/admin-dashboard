@@ -3,9 +3,10 @@
 body {
     font-family: system-ui, "Segoe UI", 'Roboto', Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 6fr;
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: 1fr 4fr;
 }
 
 /* Sidebar Section */
@@ -15,7 +16,6 @@ body {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
 
-    height: 100vh;
     padding: 15px;
     color: white;
     font-weight: bolder;
@@ -61,7 +61,6 @@ header {
     overflow: auto;
 
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    height: 25vh;
     padding: 15px 30px;
 
     display: grid;
@@ -153,12 +152,12 @@ main {
     grid-row: 2 / 3;
 
     padding: 2rem;
-    height: 75vh;
-    gap: 3rem;
+    column-gap: 2rem;
+
+    overflow: auto;
 
     display: grid;
-    grid-template-columns: 2.5fr 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 3fr 1fr;
 }
 
 .main-cards {
@@ -174,7 +173,7 @@ main {
 }
 
 .main-card {
-    padding: 1rem;
+    padding: 2rem 1rem;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 
     border-radius: 18px;
@@ -185,7 +184,7 @@ main {
 }
 
 .main-card p {
-    max-width: 40ch;
+    max-width: 50ch;
 }
 
 .main-card div {
@@ -204,11 +203,11 @@ h2 {
 
 .announcement-card {
     grid-column: 2 / 3;
-    grid-row: 1 / 2;   
+    grid-row: 1 / 2;
 }
 
 .announcement-content {
-    padding: 1.5rem;
+    padding: 1rem;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     border-radius: 18px;
 
@@ -216,7 +215,7 @@ h2 {
 }
 
 .announcement-content div {
-    padding: 2rem 1rem;
+    padding: 1rem;
     border-bottom: 1px solid rgba(128, 128, 128, 0.546);
 }
 
@@ -234,16 +233,32 @@ h2 {
 }
 
 .trending-content {
-    padding: 10px;
+    padding: 1rem;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 18px;
 
     display: grid;
-    gap: 15px;
+    gap: 1rem;
 }
 
 .trending-content > div {
     display: grid;
     grid-auto-flow: column;
+
+    justify-content: center;
+    align-items: center;
+
+    grid-template-columns: 1fr 2fr;
+}
+
+.trending-content img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.trending-text-wrapper p:nth-child(2) {
+    color: rgb(75, 75, 75);
 }
 
 /* Icon sizes  */

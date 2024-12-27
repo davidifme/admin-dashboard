@@ -194,17 +194,38 @@ main {
     gap: 1rem;
 }
 
+h1 {
+    font-weight: 500;
+}
+
+h2 {
+    font-weight: 400;
+}
+
 .announcement-card {
     grid-column: 2 / 3;
     grid-row: 1 / 2;   
 }
 
 .announcement-content {
-    padding: 10px;
+    padding: 1.5rem;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 18px;
 
     display: grid;
-    gap: 15px;
+}
+
+.announcement-content div {
+    padding: 2rem 1rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.546);
+}
+
+.announcement-content > div:nth-last-child(1){
+    border: 0;
+}
+
+.announcement-content p {
+    max-width: 30ch;
 }
 
 .trending-card {
@@ -237,5 +258,5 @@ img[alt*="icon"] {
 }
 
 .sidebar img[alt*="icon"] {
-    width: 3rem;
+    width: 2rem;
 }

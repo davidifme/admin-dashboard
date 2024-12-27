@@ -4,7 +4,7 @@ body {
     font-family: system-ui, "Segoe UI", 'Roboto', Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 6fr;
     grid-template-rows: 1fr 3fr;
 }
 
@@ -23,11 +23,7 @@ body {
 
     display: flex;
     flex-direction: column;
-    gap: 50px;
-}
-
-.sidebar p {
-    align-self: center;
+    gap: 30px;
 }
 
 .sidebar-links div,
@@ -38,6 +34,17 @@ body {
     grid-template-columns: 75px 1fr;
     grid-template-rows: auto;
     margin-bottom: 1rem;
+}
+
+.sidebar p {
+    align-self: center;
+}
+
+/* Change icons color from black to white and center them */
+.sidebar img[alt*="icon"],
+.logo img {
+    filter: invert(100%) brightness(200%);
+    justify-self: center;
 }
 
 .logo p {
@@ -129,16 +136,15 @@ main {
 
 /* Icon sizes  */
 
+/* All icons */
 img[alt*="icon"] {
     width: 35px;
 }
 
-.sidebar img[alt*="icon"],
-.logo img {
-    filter: invert(100%) brightness(200%);
-    justify-self: center;
-}
-
 .logo img {
     width: 50px;
+}
+
+.sidebar img[alt*="icon"] {
+    width: 30px;
 }

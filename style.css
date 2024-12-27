@@ -60,6 +60,7 @@ header {
 
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     height: 25vh;
+    padding: 15px 10px;
 
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -69,6 +70,41 @@ header {
 header > div {
     display: grid;
     grid-auto-flow: column;
+}
+
+.search-bar-container {
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+    padding: 0px 4rem;
+}
+
+.profile-shortcut {
+    grid-template-columns: 2fr 1fr 2fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.profile-shortcut p {
+    justify-self: start;
+    font-weight: 800;
+}
+
+#notification-icon {
+    width: 30px;
+    justify-self: end;
+}
+
+#small-profile-picture {
+    width: 50px;
+    border-radius: 50%;
+}
+
+#search-bar {
+    height: 35px;
+    border-radius: 15px;
+    border: 0;
+    background-color: #e2e2e2;
+    padding: 10px 15px;
 }
 
 /* Main content section */

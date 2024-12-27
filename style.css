@@ -60,7 +60,7 @@ header {
 
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     height: 25vh;
-    padding: 15px 10px;
+    padding: 15px 30px;
 
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -80,6 +80,7 @@ header > div {
 
 .profile-shortcut {
     grid-template-columns: 2fr 1fr 2fr;
+    gap: 2rem;
     align-items: center;
     justify-items: center;
 }
@@ -87,6 +88,7 @@ header > div {
 .profile-shortcut p {
     justify-self: start;
     font-weight: 800;
+    font-size: larger;
 }
 
 #notification-icon {
@@ -107,13 +109,48 @@ header > div {
     padding: 10px 15px;
 }
 
+.profile-highlight {
+    grid-template-columns: 125px 1fr;
+    padding: 0 4rem;
+    gap: 2rem;
+    align-items: center;
+}
+
+#profile-picture {
+    width: 125px;
+    border-radius: 50%;
+}
+
+.profile-name-container {
+    font-weight: 650;
+}
+
+.profile-name-container p:nth-child(2) {
+    font-size: x-large;
+}
+
+button {
+    height: 50px;
+    border: 0;
+    border-radius: 24px;
+    background-color: #1992D4;
+    color: white;
+}
+
+.header-buttons {
+    align-items: center;
+    gap: 30px;
+    font-size: larger;
+    font-weight: 700;
+}
+
 /* Main content section */
 
 main {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
 
-    padding: 10px;
+    padding: 2rem;
     height: 75vh;
 
     display: grid;
@@ -189,5 +226,5 @@ img[alt*="icon"] {
 }
 
 .sidebar img[alt*="icon"] {
-    width: 30px;
+    width: 3rem;
 }

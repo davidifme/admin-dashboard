@@ -59,10 +59,11 @@ header {
     grid-row: 1 / 2;
 
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    height: 25vh;
 
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: repeat(2, 1fr)
+    grid-template-rows: 1fr 2fr;
 }
 
 header > div {
@@ -77,10 +78,16 @@ main {
     grid-row: 2 / 3;
 
     padding: 10px;
+    height: 75vh;
 
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: repeat(2, 1fr);
+}
+
+.main-cards {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
 }
 
 .project-cards {
